@@ -1,0 +1,565 @@
+
+@media screen and (max-width: 850px)  {
+    .box-con{
+        flex-direction: column;
+        grid-template-columns: auto;
+        width: 100%;
+    }
+    .proflie{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .proflie-box img{
+        width: 100%;
+    }
+    .proflie-text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .proflie-text .btn{
+        width: 30%;
+        font-size: 10px;
+        text-align: center;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    .end-box{
+        font-size: 10px;
+        
+    }
+
+
+
+    
+}
+
+    @media screen and (max-width: 450px)  {
+
+                /* heropage */
+    .banner{
+        flex-direction: column;
+        grid-template-columns: auto;
+        width: 100%;
+
+    }
+    .banner-con img{
+        width: 100%;
+    }
+    .project{
+        flex-direction: column;
+        grid-template-columns: auto;
+        width: 100%;
+        max-width: 1000px;
+    }
+    .pythonpj{
+        font-size: 10px;
+    }
+    .websidepj{
+        font-size: 10px;
+    }
+    .youtube-con{
+        flex-direction: column;
+        grid-template-columns: auto;
+        width: 100%;
+        padding-top: 2rem;
+    }
+    .youtube-con .bwn iframe{
+        width: 300px;
+        height: 200px;
+               
+    }
+    .bwn{
+        justify-content: center;
+        align-items: center;
+        left: 5rem;
+    }
+    .bwn iframe{
+        margin-left: 3rem;
+    }
+    .youtube-con .interview iframe{
+        width: 300px;
+        height: 200px;
+               
+    }
+    .interview{
+        justify-content: center;
+        align-items: center;
+        left: 5rem;
+    }
+    .interview iframe{
+        margin-left: 3rem;
+    }
+    .design{
+        flex-direction: column;
+        grid-template-columns: auto;
+        width: 100%;      
+        padding-block-end: 7rem;  
+
+    }
+    .design-con{
+        max-width: 1200px;
+    }
+    .slide img{
+        width: 100%;
+        height: 150px;
+    }
+    .text-design{
+        flex-direction: column;
+        
+    }
+    .text-design img{
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    .next{
+        top:  155px;
+        left: 20rem;
+        
+    }
+    .prev{
+        top: 155px;
+        
+    }
+
+    /* about pager */
+    
+    .banner-flame img{
+        width: 100%;
+    }
+    .present-con{
+        display: grid;
+        grid-template-columns: auto;
+        flex-direction: column;
+    } 
+    .present-img {
+        
+        width: 0%;
+    }
+    .present-img .present-slide{
+        width: 400px;
+        height: 400px;
+    }
+    .present-text{
+        align-items: center;
+        display: contents;
+
+    }
+    /* .present-fill{
+        margin-right: 5rem ;
+    }
+    .present-fill h2 {
+        font-size: 20px;
+    } */
+    /* .about-text{
+        justify-content: center;
+        text-align: left;
+        padding: 2rem 0rem;
+        margin: 1rem;
+        padding-left: 5rem;
+        align-items: center;       
+    } */
+    /* .present-fills {
+        padding-right: 5rem;
+    } */
+    .about-text p{
+        padding-left: 1rem;
+        padding-top: 2rem;
+        text-align: left;
+        font-size: 20px;
+    }
+    .about-text h1{
+        display: contents;
+    }
+    .edu-text {
+        padding-right: 11rem;
+
+    }
+
+
+        
+    }
+
+
+
+    @media screen and (min-width: 451px) and (max-width: 619px)  {
+
+        .banner-con img{
+            width: 100%;
+        }
+        .pythonpj{
+            font-size: 10px;
+        }
+        .websidepj{
+            font-size: 10px;
+        }
+        .project-con{
+            grid-gap: 2rem;
+        }
+        .youtube-con{
+            flex-direction: column;
+            grid-template-columns: auto;
+            width: 100%;
+            padding-top: 4rem;
+        }
+        .youtube-con .bwn iframe{
+            width: 300px;
+            height: 200px;
+                   
+        }
+        .bwn{
+            justify-content: center;
+            align-items: center;
+            left: 5rem;
+        }
+        .bwn iframe{
+            margin-left: 7.5rem;
+        }
+        .youtube-con .interview iframe{
+            width: 300px;
+            height: 200px;
+                   
+        }
+        .interview{
+            justify-content: center;
+            align-items: center;
+            left: 5rem;
+        }
+        .interview iframe{
+            margin-left: 7.5rem;
+        }
+        .design{
+            flex-direction: column;
+            grid-template-columns: auto;
+            width: 100%;    
+                
+    
+        }
+        .design-con{
+            max-width: 1200px;
+            
+        }
+        .slide img{
+            width: 100%;
+            height: 210px;
+        }
+        .text-design{
+            flex-direction: column;
+            
+        }
+        .text-design img{
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .next{
+            top:  200px;
+            left: 31rem;
+            
+        }
+        .prev{
+            top: 200px;
+            
+            
+        }
+        .banner-flame img{
+            width: 100%;
+            display: grid;
+        }
+        .present-con{
+            display: grid;
+            grid-template-columns: auto;
+            flex-direction: column;
+        }
+        .present-img{
+            width: 0%;
+        } 
+        .present-text{
+            align-items: center;
+            
+            display: flex;
+            
+        }
+        .about-text h1{
+            display: contents;
+            padding-left: 13rem;
+            text-align: center;
+                        
+        }
+
+        
+        
+        
+    }
+
+    @media screen and (min-width: 620px) and (max-width: 795px)  {
+
+        .banner-con img{
+            width: 100%;
+            
+        }
+        .pythonpj h1 {
+            font-size: 20px;
+        }
+        .websidepj h1{
+            font-size: 20px;
+        }
+        .youtube-con{
+            flex-direction: column;
+            grid-template-columns: auto;
+            width: 100%;
+            padding-top: 4rem;
+        }
+        .youtube-con .bwn iframe{
+            width: 400px;
+            height: 300px;
+                   
+        }
+        .bwn{
+            justify-content: center;
+            align-items: center;
+            left: 5rem;
+        }
+        .bwn iframe{
+            margin-left: 7.5rem;
+        }
+        .youtube-con .interview iframe{
+            width: 400px;
+            height: 300px;
+                   
+        }
+        .interview{
+            justify-content: center;
+            align-items: center;
+            left: 5rem;
+        }
+        .interview iframe{
+            margin-left: 7.5rem;
+        }
+        .design{
+            flex-direction: column;
+            grid-template-columns: auto;
+            width: 100%; 
+            padding-block-end: 6rem;
+    
+        }
+        .design-con{
+            max-width: 1000px;            
+            padding-left: 2rem;
+            justify-content: center;
+        }
+        .slide img{
+            width: 100%;
+            height: 250px;
+        }
+        .text-design{
+            flex-direction: column;
+            
+        }
+        .text-design img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            
+        }
+        .next{
+            top:  250px;
+            left: 13rem;
+            
+        }
+        .prev{
+            top: 250px;
+            
+            
+        }
+        .present-text{
+            align-items: center;           
+            display: grid;
+            grid-template-columns: 1fr ;
+            flex-direction: column;
+            padding-top: 25rem;
+            padding-right: 2rem;
+        
+        }
+        .present-fill{
+            display: grid;
+            
+        }
+        .present-img {
+            width: 0%;
+            
+        }
+        .about-text h1 {
+            display: contents;
+        }
+
+
+    }
+
+    @media screen and (min-width: 796px) and (max-width: 850px)  {
+
+        .banner-con img{
+            width: 100%;
+        }
+        .pythonpj{
+            font-size: 15px;
+        }
+        .websidepj {
+            font-size: 15px;
+        }
+        .youtube-con{
+            flex-direction: column;
+            grid-template-columns: auto;
+            width: 100%;
+            padding-top: 4rem;
+        }
+        .youtube-con .bwn iframe{
+            width: 500px;
+            height: 300px;
+                   
+        }
+        .bwn{
+            justify-content: center;
+            align-items: center;
+            left: 5rem;
+        }
+        .bwn iframe{
+            margin-left: 7.5rem;
+        }
+        .youtube-con .interview iframe{
+            width: 500px;
+            height: 300px;
+                   
+        }
+        .interview{
+            justify-content: center;
+            align-items: center;
+            left: 5rem;
+        }
+        .interview iframe{
+            margin-left: 7.5rem;
+        }
+        .design{
+            flex-direction: column;
+            grid-template-columns: auto;
+            width: 100%;        
+    
+        }
+        .design-con{
+            max-width: 1000px;
+            padding-left: 2rem;
+            column-gap: 3rem;
+            justify-content: center;
+        }
+        .slide img{
+            width: 100%;
+            height: 250px;
+        }
+        .text-design{
+            flex-direction: column;
+            
+        }
+        .text-design img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .next{
+            top:  250px;
+            left: 44rem;
+            
+        }
+        .prev{
+            top: 250px;
+            
+            
+        }
+        .present-img{
+            width: 0%;
+            justify-content: center;
+        }
+        .present-text{
+            align-items: center;           
+            display: grid;
+            grid-template-columns: 1fr ;
+            flex-direction: column;
+            padding-top: 25rem;
+                   
+        }
+        .about-text h1{
+            display: contents;
+        }
+
+
+
+
+    }
+
+    @media screen and (min-width: 851px) and (max-width: 1000px)  {
+
+        .banner-con img{
+            width: 100%;
+        }
+        .pythonpj{
+            font-size: 15px;
+        }
+        .websidepj{
+            font-size: 15px;
+        }
+
+        .youtube-con{
+            
+            grid-template-columns: auto;
+            width: 100%;
+            padding-top: 4rem;
+        }
+        .youtube-con .bwn iframe{
+            width: 400px;
+            height: 300px;
+        }
+        .youtube-con .interview iframe{
+            width: 400px;
+            height: 300px;
+        }    
+        .slide img{
+            width: 100%;
+            height: 350px;
+        }
+        .next{
+            top:  220px;
+            
+            
+        }
+        .prev{
+            top: 220px;
+            
+            
+        }
+        .present-img{
+            width: 340px;
+            
+            
+        }
+        .present-img .present-slide{
+            width: 350px;
+            padding-left: 2rem;
+            
+        }
+        .about-text h1{
+            display: contents;
+        }
+        .edu-text h2{
+            display: contents;
+        }
+
+
+
+    }
+    @media screen and (min-width: 1001px) and (max-width: 2000px)  {
+
+        .about-text h1 {
+            display: contents;
+        }
+    }     

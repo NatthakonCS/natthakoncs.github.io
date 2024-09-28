@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+
+.nav-con{
+  justify-content: space-between;
+  display: flex;
+  background-color: #111;
+}
+
+
+.logo a{
+  padding: 5rem;
+  
+}
+.openbtn{
+  position: fixed;
+  top: 0rem;
+  right: 5rem;
+  margin: 1 auto;
+  padding: 5rem;
+  z-index: 1;
+}
+
+  menu{
+    margin: 1 auto;
+    position: fixed;
+    top: 0;
+}
+
+
+
+
+/* menubar */
+
+.sidenav {
+
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(25, 43, 43);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    
+  }
+
+  .openbtn:hover {
+    background-color: rgb(3, 5, 5);
+    transition: 0.5s;
+    cursor: pointer;
+  }  
+
+  
+  #main {
+    transition: margin-left 0.5s;
+    padding: 20px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  @media screen and (max-height: 450px) {
+    .container {
+      padding-top: 15px;
+      font-size: 18px;
+    }
+   
+  }
+  @media screen and (max-height: 450px) {
+    .openbtn {
+      top: 0.8rem;
+      right: 1rem;
+      font-size: 18px;
+    }
+   
+  }
+
+  
+
+        /* banner */
+
+
+  .banner-con{
+    background-color: #060c10;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    /* border: 1px solid red; */
+    
+  }
+  .banner-frame img{
+    width: 100%;
+  }
+  .banner-con img{
+    width: 100%;
+  }
+        /* project */
+  .project{
+    background-color: #060c10;
+    color: white;
+    /* border: 1px solid red; */
+  }
+  .project-con{
+    display: flex;
+    justify-content: center;
+    
+  }
+  .pythonpj{
+    width: 45%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    /* border: 1px solid red; */
+  }
+
+  .websidepj{
+    width: 45%;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    /* border: 1px solid red; */
+  }
+
+  .pythonpj img{
+    width: 100%;
+  }
+  .websidepj img{
+    width: 100%;
+  }
+
+  .pj:hover{
+    opacity: 50%;
+    transition: 0.5s ;
+  }
+  
+
+  .textpj:hover{
+    color: #747474;
+    transition: 0.5s;
+    
+  }
+
+            /* youtube */
+
+  .youtube-con{
+    background-color: #060c10;
+    display: flex;
+    justify-content: center;
+    padding-top: 15rem;
+    grid-gap: 4rem;
+    padding-block-end: 5rem;
+    margin: auto;
+    
+  }
+  
+
+
+
+            /*  design */
+
+            .slide{
+              display: none;
+            }
+  .design{
+    background-color: #060c10;
+    padding-block-end: 3rem;
+    /* border: 1px solid red; */
+  }          
+
+  .design-con{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    
+  }
+  .slide img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+
+    
+
+  }
+
+  .prev  {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 20px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 20px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
+  }
+
+  .next {
+
+    left: 12rem;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev {
+
+    left: 1rem;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  .text-design{
+    display: grid;
+    
+  }
+  .slide img{
+    width: 100%;
+
+  }
+
+  
+
+  

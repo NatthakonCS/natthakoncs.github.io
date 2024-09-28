@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NatthakonCS</title>
+    <link rel="stylesheet" href="../css/herostyle.css">
+    <link rel="icon" href="../img/NTCWH.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/responsive.css">
+    <style>
+
+
+        .content{
+            display: none;
+        }
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 85px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  --g1:conic-gradient(from  90deg at left   3px top   3px,#ffffff00 90deg,#ffffff 0);
+  --g2:conic-gradient(from -90deg at bottom 3px right 3px,#ffffff00 90deg,#ffffff 0);
+  background: var(--g1),var(--g1),var(--g1), var(--g2),var(--g2),var(--g2);
+  background-position: left,center,right;
+  background-repeat: no-repeat;
+  animation: l10 1s infinite alternate;
+}
+@keyframes l10 {
+  0%,
+  2%   {background-size:25px 50% ,25px 50% ,25px 50%}
+  20%  {background-size:25px 25% ,25px 50% ,25px 50%}
+  40%  {background-size:25px 100%,25px 25% ,25px 50%}
+  60%  {background-size:25px 50% ,25px 100%,25px 25%}
+  80%  {background-size:25px 50% ,25px 50% ,25px 100%}
+  98%,
+  100% {background-size:25px 50% ,25px 50% ,25px 50%}
+}
+.fadecontent{
+    animation-name: fade;
+    animation-duration: 2s;
+    
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* scorllbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+    </style>
+
+
+</head>
+<body onload="activeShowpage()" style="background-color: #111;">
+    <div class="loader" id="preLoader"></div>
+    <div id="pageContent" class="content fadecontent">
+
+                
+            <!-- loader -->
+<nav>
+
+    <div class="container bg">
+        <div class="nav-con" id="nav">
+
+            <div class="logo">
+                <a href="index.html" ><img  src="../img/NTCWH.png" alt=""></a>
+            </div>
+        <ul><div class="menu">
+                    <!-- menubar -->
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="../html/about.html">About</a>
+                <a href="#">Works</a>
+                <a href="../html/about.html">Contact</a>
+                <a href="../html/index.html">Home</a>
+              </div>
+              
+              <!-- Use any element to open the sidenav -->
+            
+                <button class="openbtn" onclick="openNav()">☰ </button>
+        </div>              
+              <div id="main">
+                 
+              </div>
+            </ul>
+
+      </div>
+    </div>
+</nav>
+
+                        <!-- banner -->
+
+    <section class="banner">
+        <div class="banner-con">
+            <div class="banner-flame">
+                <img src="../img/welcome to myworld.png" alt="">
+
+            </div>
+        </div>
+    </section>
+
+                        <!-- project -->
+
+    <section class="project">
+        <div class="project-con">
+            <div class="pythonpj">
+                <a href="https://youtu.be/Olq_GGkSqVE" target="_blank"><img src="../img/projectpythone.png" class="pj"></a>
+                <h1 class="textpj">Calculator Project</h1>
+            </div>
+            
+            <div class="websidepj">
+                <a href="../html/index.html"><img src="../img/websideproject.png" class="pj" alt=""></a>
+                <h1 class="textpj">Website Project</h1>
+            </div>           
+        </div>
+    
+    </section>
+
+    <section class="youtube">
+        <div class="youtube-con">
+            
+            <div class="bwn">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hgE0UeT0wj4?si=lAqlPdkXsfOzBJ84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="interview">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JVvq0OxS7II?si=xbt1_iV3_YwLhaTK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
+             </div>
+            
+        </div>
+    </section>
+    
+    <section class="design">
+        <div class="design-con">
+
+            <div class="text-design">
+                <img src="../img/textdesign.png" alt="">
+            </div>
+            
+            <div class="slide fade">
+                <img src="../img/Tablemacth.jpg" alt="">
+            </div>
+            <div class="slide fade">
+                <img src="../img/slide1.jpg" alt="">
+            </div>
+            <div class="slide fade">
+                <img src="../img/slide2.jpg" alt="">
+            </div>
+            <div class="slide fade">
+                <img src="../img/slide3.jpg" alt="">
+            </div>
+            <div class="slide fade">
+                <img src="../img/slide4.jpg" alt="">
+            </div>
+            <div class="slide fade">
+                <img src="../img/slide5.jpg" alt="">
+            </div>
+            <div class="slide fade">
+                <img src="../img/slide6.jpg" alt="">
+            </div>
+            <div class="slide fade">
+                <img src="../img/slide7.jpg" alt="">
+            </div>
+            <div class="slide fade">
+                <img src="../img/slide8.jpg" alt="">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+
+
+
+  
+
+
+    
+
+    </div>
+
+
+
+
+    
+       
+            <!-- design -->
+            <script src="../javascript/design.js"></script>
+            <!-- script loader -->
+            <script src="../javascript/script.js"></script>
+          <!-- script menu -->
+          <script src="../javascript/script.js"></script>
+          <!-- script mouse -->
+          <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1684982764/magicmouse-2.0.0.cdn.min.js"></script>
+          <script type="text/javascript">
+            options = {
+            "cursorOuter": "circle-basic",
+            "hoverEffect": "circle-move", 
+            "hoverItemMove": false,
+            "defaultCursor": false,
+            "outerWidth": 30,
+            "outerHeight": 30
+              };
+            magicMouse(options);
+          </script>
+</body>
+</html>

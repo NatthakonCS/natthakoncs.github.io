@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NatthakonCS</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/NTCWH.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/responsive.css">
+    <style>
+ 
+        .content{
+            display: none;
+        
+        }
+
+
+.loader {
+
+  width: 85px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  --g1:conic-gradient(from  90deg at left   3px top   3px,#faf8f800 90deg,#ffffff 0);
+  --g2:conic-gradient(from -90deg at bottom 3px right 3px,#fcf9f900 90deg,#ffffff 0);
+  background:var(--g1),var(--g1),var(--g1), var(--g2),var(--g2),var(--g2);
+  background-position: left,center,right;
+  background-repeat: no-repeat;
+  animation: l9 1s infinite;
+}
+@keyframes l9 {
+  0%   {background-size:25px 50% ,25px 50% ,25px 50%}
+  25%  {background-size:25px 100%,25px 50% ,25px 50%}
+  50%  {background-size:25px 50% ,25px 100%,25px 50%}
+  75%  {background-size:25px 50% ,25px 50% ,25px 100%}
+  100% {background-size:25px 50% ,25px 50% ,25px 50%}
+}
+
+.fadecontent{
+    animation-name: fade;
+    animation-duration: 2s;
+    
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+/* scorllbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+    </style>
+
+
+</head>
+<body onload="activeShowpage()" style="background-color: #111;">
+    <div class="loader" id="preLoader"></div>
+    <div id="pageContent" class="content fadecontent">
+
+                
+            <!-- loader -->
+<nav>
+
+    <div class="container bg">
+        <div class="nav-con" id="nav">
+
+            <div class="logo">
+                <a href="#" ><img  src="../img/NTCWH.png" alt=""></a>
+            </div>
+        <ul><div class="menu">
+                    <!-- menubar -->
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="../html/about.html">About</a>
+                <a href="../html/hero.html">Works</a>
+                <a href="../html/about.html">Contact</a>
+              </div>
+              
+              <!-- Use any element to open the sidenav -->
+            
+                <button class="openbtn" onclick="openNav()">☰ </button>
+        </div>              
+              <div id="main">
+                 
+              </div>
+            </ul>
+
+      </div>
+    </div>
+</nav>
+
+                <!-- Box  -->
+        <section class="Box">
+            <div class="container-box">
+                <div class="box-con">
+
+            <div class="box-left">
+                <a href="../html/hero.html"><div class="box-left-img">
+                <img src="../img/Project.png" alt="Avatar" class="image">
+                <div class="overlay">
+                    <div class="text">Project</div>                           
+                     </div>
+                </div></a>
+            </div>
+
+            <div class="box-right">
+                <a href="../html/hero.html"><div class="box-right-img">
+                <img src="../img/graphicdc.png" alt="Avatar" class="image">
+                <div class="overlay">
+                    <div class="text">Graphic design</div>
+                </div>
+            </div> 
+                  
+            </div></a>
+
+                <div class="box-right2">
+                <a href="../html/hero.html"><div class="box-right-img2">
+                    <img src="../img/editor.png" alt="" class="image">
+                    <div class="overlay">
+                        <div class="text">Editor</div>
+                    
+                </div></a>
+            </div>
+
+                                                       
+            </div>
+        </div>
+        
+        </section>
+
+
+
+            <!-- Proflie -->
+        <section class="proflie">
+            <div class="proflie-conteiner">
+            <div class="proflie-box">
+                <img src="../img/proflie.png" alt="">
+            </div>
+            <div class="proflie-text">
+                <a href="../html/about.html"><button class="btn default"><h1>more</h1></button></a>
+            </div>
+        </div>
+
+        </section>
+
+        <section class="end">
+            <div class="end-box">
+                <h2>@2024 Hello world , By NatthakonCS</h2>
+                
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+
+    
+       
+
+        
+            <!-- script loader -->
+            <script src="../javascript/script.js"></script>
+          <!-- script menu -->
+          <script src="../javascript/script.js"></script>
+          <!-- script mouse -->
+          <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1684982764/magicmouse-2.0.0.cdn.min.js"></script>
+          <script type="text/javascript">
+            options = {
+            "cursorOuter": "circle-basic",
+            "hoverEffect": "circle-move", 
+            "hoverItemMove": false,
+            "defaultCursor": false,
+            "outerWidth": 30,
+            "outerHeight": 30
+              };
+            magicMouse(options);
+          </script>
+</body>
+</html>

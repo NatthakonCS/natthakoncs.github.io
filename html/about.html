@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NatthakonCS</title>
+    <link rel="stylesheet" href="../css/herostyle.css">
+    <link rel="icon" href="../img/NTCWH.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/about..css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <style>
+ 
+
+        .content{
+            display: none;
+        }
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 85px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  --g1:conic-gradient(from  90deg at left   3px top   3px,#0000 90deg,#ffffff 0);
+  --g2:conic-gradient(from -90deg at bottom 3px right 3px,#0000 90deg,#ffffff 0);
+  background: var(--g1),var(--g1),var(--g1), var(--g2),var(--g2),var(--g2);
+  background-position: left,center,right;
+  background-repeat: no-repeat;
+  animation: l10 1s infinite alternate;
+}
+@keyframes l10 {
+  0%,
+  2%   {background-size:25px 50% ,25px 50% ,25px 50%}
+  20%  {background-size:25px 25% ,25px 50% ,25px 50%}
+  40%  {background-size:25px 100%,25px 25% ,25px 50%}
+  60%  {background-size:25px 50% ,25px 100%,25px 25%}
+  80%  {background-size:25px 50% ,25px 50% ,25px 100%}
+  98%,
+  100% {background-size:25px 50% ,25px 50% ,25px 50%}
+}
+.fadecontent{
+    animation-name: fade;
+    animation-duration: 2s;
+    
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* scorllbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+    </style>
+
+
+</head>
+<body onload="activeShowpage()" style="background-color: #111;">
+    <div class="loader" id="preLoader"></div>
+    <div id="pageContent" class="content fadecontent">
+
+                
+            <!-- loader -->
+<nav>
+
+    <div class="container bg">
+        <div class="nav-con" id="nav">
+
+            <div class="logo">
+                <a href="index.html" ><img  src="../img/NTCWH.png" alt=""></a>
+            </div>
+        <ul><div class="menu">
+                    <!-- menubar -->
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="../html/about.html">About</a>
+                <a href="../html/hero.html">Works</a>
+                <a href="../html/about.html">Contact</a>
+                <a href="../html/index.html">Home</a>
+              </div>
+              
+              <!-- Use any element to open the sidenav -->
+            
+                <button class="openbtn" onclick="openNav()">☰ </button>
+        </div>              
+              <div id="main">
+                 
+              </div>
+            </ul>
+
+      </div>
+    </div>
+</nav>
+
+                        <!-- banner -->
+
+    <section class="banner">
+        <div class="banner-con">
+            <div class="banner-flame">
+                <img src="../img/about.png" alt="">
+
+            </div>
+        </div>
+    </section>
+
+                        <!-- contact -->
+
+    <section class="present">
+        <div class="present-con">
+
+        
+            <div class="present-img">
+                <img src="../img/present-img.jpg" class="present-slide" alt="">       
+                <img src="../img/present3.jpg" class="present-slide" alt="">
+            </div>
+            
+
+            <div class="present-text">
+                <div class="present-fill">
+                <h1>NatthakonCS</h1>
+                <div class="text-bg"><h2>ช่องทางการติดต่อ</h2></div>
+                <a href="https://www.instagram.com/isthisfiw_/" target="_blank"><h3 class="IG">Instagram </h3></a><p>: isthisfiw_</p>
+                <a href="https://www.facebook.com/pikchuZ/" target="_blank"><h3 class="FB">Facebook </h3></a><p>: Pikchu</p>
+                <a href=""><h3 class="LINE">Line </h3></a><p>: bolaxz_</p>
+            
+            </div>        
+            </div>
+        </div>
+                
+    </section>
+
+                        <!-- present -->
+
+    <section class="present">
+        <div class="about-con">
+            
+            <div class="about-text">
+                
+                <h1>ข้อมูลส่วนตัว</h1>
+                <p>ชื่อ-นามสกุล : นายณัฐกรณ์ จันทร์ศรี</p>
+                <p>วันเกิด : 8 กันยายน 2549</p>
+                <p>อายุ : 18</p>               
+                <p>สัญชาติ : ไทย</p>
+                 
+             </div>
+        </div>
+    </section>
+
+                      <!-- education -->        
+
+    <section class="edu">
+        <div class="edu-text">
+            <h2>การศึกษา</h2>
+        </div>
+    </section>
+
+                        
+
+    <section class="edu">
+        <div class="edu-con">
+           
+        
+
+        <div class="edu-blox">
+            <img src="../img/anuban.png" alt="">
+            <h3>ระดับประถมศึกษา</h3>
+            <p>แผนจีนเข้ม</p>
+            <p>โรงเรียนอนุบาลนครราชสีมา</p>
+            <p>อ.เมือง จ.นครราชสีมา</p>
+        </div>
+
+        <div class="edu-blox">
+            <img src="../img/rajsima.png" class="rajsima" alt="">
+            <h3>ระดับมัธยมต้น</h3>
+            <p>แผนปกติ</p>
+            <p>โรงเรียนราชสีมาวิทยาลัย</p>
+            <p>อ.เมือง จ.นครราชสีมา</p>
+        </div>
+
+        <div class="edu-blox">
+            <img src="../img/bwn.png" class="bwn" alt="">
+            <h3>ระดับมัธยมปลาย</h3>
+            <p>แผนศิลป์-คำนวณ</p>
+            <p>โรงเรียนบุญวัฒนา</p>
+            <p>อ.เมือง จ.นครราชสีมา</p>
+        </div>
+    </div>
+
+    </section>
+
+
+
+
+
+    
+
+    </div>
+
+
+
+
+            <!-- slideproflie -->
+            <script src="../javascript/proflieslide.js"></script>
+            <!-- design -->
+            <script src="../javascript/design.js"></script>
+            <!-- script loader -->
+            <script src="../javascript/script.js"></script>
+          <!-- script menu -->
+          <script src="../javascript/script.js"></script>
+          <!-- script mouse -->
+          <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1684982764/magicmouse-2.0.0.cdn.min.js"></script>
+          <script type="text/javascript">
+            options = {
+            "cursorOuter": "circle-basic",
+            "hoverEffect": "circle-move", 
+            "hoverItemMove": false,
+            "defaultCursor": false,
+            "outerWidth": 30,
+            "outerHeight": 30
+              };
+            magicMouse(options);
+          </script>
+</body>
+</html>
